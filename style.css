@@ -8,8 +8,8 @@ body {
   .pic{
     justify-self: start;
     width: fit-content;
+    height: fit-content;
     overflow: hidden;
-    background-color: #222;
     border-radius: 50%;
   }
   .container {
