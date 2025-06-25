@@ -5,16 +5,33 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  .pic{
+    justify-self: start;
+    width: fit-content;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 50%;
+  }
   .container {
     width: 80%;
     margin: auto;
-    padding: 2rem;
+    padding: 3rem;
     max-width: 900px;
   }
-  
+  .expertisesPics img {
+    width: fit-content;
+    height: 100px;
+  }
+  .expertisesPics{
+    flex-wrap: wrap;
+    display: flex;
+    width: 80%;
+    background-color: transparent;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
   header {
-    text-align: center;
+    text-align: start;
     margin-bottom: 2rem;
   }
   
@@ -22,12 +39,19 @@ body {
     margin-bottom: 0.2rem;
   }
   
-  header p, a {
+  header p {
+    text-wrap: wrap;
     font-size: 0.95rem;
     color: #333;
     text-decoration: none;
   }
   
+  header a {
+    font-size: 0.95rem;
+    color: #00324d;
+    text-decoration: underline;
+  }
+
   section {
     margin-bottom: 2rem;
   }
