@@ -1,98 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Danish Ajmal - Web Developer CV</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="headingDiv">
-      <div class="pic">
-      <img src="./mypic.jpeg" alt="portfolio pic" width="200px" height="230px">
-      </div>
-    <header>
-      <h1>Danish Ajmal</h1>
-      <h2>Full-Stack Web Developer | Expertise in Next.js, MERN Stack & Docker</h2>
-      <p>Gujrat, 51000, Pakistan | +92 318 7325159 | <a href="mailto:danishajmalbutt@gmail.com">danishajmalbutt@gmail.com</a> | <a href="https://www.linkedin.com/in/danish-ajmal-b6a61b2a3">LinkedIn</a> | <a href="https://github.com/DanishAjma1">Github</a></p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danish Ajmal - Full-Stack Web Developer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        max-width: 60%;
+        margin: auto;
+        padding: 10px 1in 20px 1in;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #eee;
+      }
+      header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+      header h1 {
+        margin: 5px 0;
+        font-size: 28px;
+        color: #222;
+      }
+      header h2 {
+        margin: 5px 0 15px;
+        font-size: 16px;
+        color: #555;
+      }
+      header p {
+        font-size: 14px;
+        color: #666;
+      }
+      header a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      section {
+        margin: 20px 0;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #dfdfdf;
+      }
+      section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #eee;
+        background-color: #eee;
+        width: fit-content;
+        padding: 2px 10px 2px 10px;
+        border-radius: 5px;
+        color: #222;
+      }
+      .expertisesPics img {
+        width: fit-content;
+        height: 100px;
+      }
+      .expertisesPics {
+        flex-wrap: wrap;
+        display: flex;
+        width: 80%;
+        background-color: transparent;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+      }
+      ul {
+        margin: 10px 0 0 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .skills li strong {
+        color: #444;
+      }
+      .job,
+      .project {
+        margin-bottom: 15px;
+      }
+      .job strong,
+      strong,
+      .project strong {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .job em,
+      .project em,
+      em {
+        font-style: italic;
+      }
+      .project ul,
+      .job ul {
+        margin-top: 5px;
+      }
+      /* Responsive */
+      @media (max-width: 768px) {
+        header img {
+          width: 120px;
+          height: 120px;
+        }
+        .container {
+          padding: 20px;
+        }
+        .expertisesPics img {
+          width: fit-content;
+          height: 40px;
+        }
+        .expertisesPics {
+          width: 95%;
+        }
+        header h1 {
+          font-size: 22px;
+        }
+        header h2 {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./mypic.jpeg" alt="Danish Ajmal" />
+        <h1>Danish Ajmal</h1>
+        <h2>
+          Full-Stack Web Developer | MERN-Stack & SaaS APIs | Docker Deployment
+          & CI/CD
+        </h2>
+        <p>
+          📍 Gujrat, Punjab, Pakistan | 📞 +92 318 7325159<br />
+          ✉
+          <a href="mailto:danishajmalbutt@gmail.com"
+            >danishajmalbutt@gmail.com</a
+          >
+          |
+          <a href="https://www.linkedin.com/in/danish-ajmal-b6a61b2a3"
+            >LinkedIn</a
+          >
+          |
+          <a href="https://github.com/DanishAjma1">GitHub</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Full-Stack Web Developer with 2+ years of hands-on experience in the
+          JavaScript ecosystem,having built modern web applications using
+          Next.js, MongoDB, and Vercel. Experienced in full-stack development
+          with the MERN stack (MongoDB, Express.js, React.js, Node.js), having
+          designed and deployed a complete MERN-based application. Skilled in
+          building RESTful APIs, implementing JWT/Session-based authentication,
+          MongoDB data Management, and developing scalable UIs in React.js.
+          Proficient in Docker deployment, integrating SaaS tools, and
+          implementing Continuous Integration (CI) pipelines for automated
+          testing of application builds and Docker images.
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>
+            <strong>Languages & Frameworks:</strong> JavaScript (ES6+),
+            React.js, Next.js, Node.js, Express.js, PHP, HTML5, Tailwind CSS,
+            MUI
+          </li>
+          <li>
+            <strong>APIs & Authentication:</strong> REST APIs, JWT & Session
+            Auth, Firebase Auth, SaaS APIs, Socket.IO
+          </li>
+          <li><strong>Databases & Caching:</strong> MongoDB, MySQL, Redis</li>
+          <li>
+            <strong>DevOps & Deployment:</strong> Docker, CI/CD, GitHub,
+            Postman, Vercel, Firebase
+          </li>
+          <li>
+            <strong>Other skills:</strong> Full-stack app design and
+            development, clean code & peer reviews.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="expertisesPics">
+          <img src="./react.png" alt="React.js" />
+          <img src="./node.png" alt="Node.js" />
+          <img src="./mongodb.png" alt="MongoDB" />
+          <img src="./ex.png" alt="Express" />
+          <img src="./tailwind.png" alt="Tailwind" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <div class="job">
+          <strong>Full Stack Developer (Intern)</strong
+          ><em> | DevelopersHub Corporation </em> <br />
+          <em>Jul 2025 – In progress</em>
+        </div>
+        <div class="job">
+          <ul>
+            <li>
+              Developing a responsive Alibaba platform using React, Firebase,
+              Stripe, and Node.js..
+            </li>
+            <li>
+              Integrated Stripe payment gateway for secure and seamless
+              transactions.
+            </li>
+            <li>
+              Built a role-based admin portal for product, order, and customer
+              management.
+            </li>
+            <li>
+              Implemented Firebase Authentication for secure user login and
+              session handling.
+            </li>
+            <li>
+              Designed a mobile-friendly layout to ensure cross-device
+              compatibility.
+            </li>
+            <li>
+              Building and integrating core modules including a meeting
+              scheduling calendar, video calling, document processing with
+              e-signature, and payment workflows (mock).
+            </li>
+            <li>
+              Enhancing application security and authentication, ensuring safe
+              user access and role-based controls.
+            </li>
+            <li>
+              About to Deliver a seamless user experience by combining
+              scheduling, collaboration, and transaction features into a single
+              platform.
+            </li>
+          </ul>
+        </div>
+        <div class="job">
+          <strong>Full Stack Developer (Intern)</strong><em> | Coders Alpha </em
+          ><br />
+          <em>Aug 2025 – In progress</em>
+        </div>
+        <div class="job">
+          <ul>
+            <li>
+              Developing a responsive e-commerce platform using
+              React,session-based Authentication, Stripe, and Node.js..
+            </li>
+            <li>
+              Built a role-based admin portal for product, order, and customer
+              management.
+            </li>
+            <li>
+              Enhanced Admin portal,Admin can manage all the proudcts in
+              organized manner interacting good-looking UI.
+            </li>
+            <li>
+              Implemented Session-based Authentication for secure user login and
+              session handling.
+            </li>
+
+            <li>
+              Integrated Stripe payment gateway for secure and seamless
+              transactions.
+            </li>
+            <li>
+              Designed a mobile-friendly layout to ensure cross-device
+              compatibility.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="project">
+          <strong>MERN Blog App</strong> |<em>
+            MongoDB, Express, React, Node, Socket.IO, Redis
+          </em>
+          <br />
+          <em>March 2025 — July 2025</em>
+          <ul>
+            <li>
+              Built a full-stack blogging platform using the MERN stack
+              (MongoDB, Express.js, React.js, Node.js)
+            </li>
+            <li>
+              Implemented session-based authentication, protected routes, and
+              full CRUD operations
+            </li>
+            <li>
+              Integrated real-time chat functionality using Socket.IO and Redis
+              Pub/Sub for scalable communication
+            </li>
+            <li>
+              Utilized MongoDB for efficient data storage and user/content
+              management
+            </li>
+            <li>
+              Designed a clean, responsive UI in React with Tailwind CSS for a
+              seamless experience across devices.
+            </li>
+            <li>Responsive UI with Tailwind CSS.</li>
+          </ul>
+        </div>
+        <div class="project">
+          <strong>Web Developer</strong> <em> | Apprenticeship</em> <br />
+          <em>Jun 2024 – Dec 2024</em>
+          <ul>
+            <li>
+              Developed a product showcase website using basic PHP with MySQL
+              integration.
+            </li>
+            <li>
+              Designed relational databases and implemented CRUD operations.
+            </li>
+            <li>
+              Applied form validation and user authentication for secure data
+              handling.
+            </li>
+            <li>
+              Built the frontend with HTML, CSS, and basic JavaScript for an
+              interactive user experience.
+            </li>
+            <li>
+              Strengthened frontend skills by exploring and practicing React.js
+              for modern, component-based UI development.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong
+            >ARID Agriculture University — Bachelor of Science: Computer
+            Science</strong
+          >
+          | 2022 – Present
+        </p>
+        <ul>
+          <li>
+            Degree is near completion, with a strong foundation in software
+            engineering, data structures, and algorithms.
+          </li>
+          <li>
+            Developed numerous projects across different technologies, gaining
+            hands-on experience with full-stack web development, SaaS
+            integrations, and deployment workflows.
+          </li>
+          <li>
+            Applied classroom knowledge to real-world projects, enhancing
+            problem-solving and practical development skills.
+          </li>
+        </ul>
+      </section>
     </div>
-
-    <section>
-      <h2>Summary</h2>
-      <p>
-      Full-Stack Web Developer with hands-on experience in building modern web applications using Next.js, MongoDB, and Vercel for seamless deployment and server-side rendering. Expanding full-stack capabilities with the MERN stack (MongoDB, Express.js, React.js, Node.js) through project-based development. Familiar with REST API development, MySQL, Docker-based deployment, and SaaS tool integration. Passionate about clean code, open-source collaboration to build efficient and scalable solutions.
-      </p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-      <li><strong>Languages &amp; Frontend:</strong> JavaScript (ES6+), React.js, Next.js, MUI, Tailwind CSS, HTML5</li>
-      <li><strong>Backend &amp; Databases:</strong> Node.js, MongoDB, Express.js, RESTful APIs, JWT Authentication</li>
-      <li><strong>Tools &amp; DevOps:</strong> Docker, GitHub, Postman</li>
-      <li><strong>Deployment &amp; SaaS:</strong> Vercel, SaaS Integration</li>
-      </ul>
-    </section>
-    <div class="expertisesPics">
-        <img src="./react.png" alt="React.js">
-        <img src="./node.png" alt="Node.js">
-        <img src="./mongodb.png" alt="MongoDB">
-        <img src="./ex.png" alt="Express">
-        <img src="./tailwind.png" alt="Tailwind">
-      </div>
-    <section>
-      <h2>Work Experience</h2>
-      <div class="job">
-      <strong>Open Source Contributor</strong> | 15 March - Ongoing<br/>
-      <em>Volunteer work</em>
-      <ul>
-        <li>
-        <a href="#">Book Proofreading Tool (Open Source)</a> – Integrated a SaaS-based proofreading workflow by automating PDF-to-image conversion, text extraction using OCR, and API-based processing.<br/>
-        <span style="font-style:italic;">Tech: Python, OCR, SaaS API, PDF processing</span>
-        </li>
-      </ul>
-      </div>
-      <div class="job">
-      <strong>Full-Stack Web Developer</strong> | 03/2025<br/>
-      <em>Apprenticeship</em>
-      <ul>
-        <li>
-        <a href="#">Gujrat Fans (Deployed!)</a>: As a freelance developer, I built a single-page e-commerce platform for Gujrat Fans using <strong>Next.js</strong> and <strong>React</strong>. I built this application with React and deployed it on <strong>Vercel</strong> for performance and scalability. The site is designed to showcase products and info about the organization.
-        </li>
-      </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-      <strong>MERN Blog App (In Progress)</strong> | React.js, Node.js, Express.js, MongoDB
-      <p>
-        Building a full-stack blogging platform with the MERN stack. Key features: user authentication, secure protected routes, real-time chat, CRUD for posts/comments, and efficient MongoDB storage. The UI uses Tailwind CSS for a modern, responsive design. Includes image uploads and post categories.
-      </p>
-      </div>
-      <div class="project">
-      <strong>Web Developer</strong> | 01/2025<br/>
-      <em>Apprenticeship</em>
-      <ul>
-        <li>
-        <a href="#">Expense Tracker &amp; Budget Management SPA | React, Next.js, MongoDB, REST APIs</a>: Built a dynamic SPA with React, Next.js, and TypeScript for tracking expenses, managing budgets, and analyzing financial data. Integrated REST APIs with MongoDB for secure data storage, and used MUI for a modern UI. Utilizes <strong>client-side rendering (CSR)</strong> for an interactive experience and integrates <strong>REST APIs</strong> with <strong>MongoDB</strong> for secure, scalable data management.
-        </li>
-      </ul>
-      </div>
-    </section>
-
-    <section style="border-bottom: 2px solid #eee; padding-bottom: 1rem;">
-      <h2>Education</h2>
-      <p><strong>ARID AGRICULTURE UNIVERSITY</strong> | 2022 - Ongoing</p>
-      <p>Bachelor of Science: Computer Science</p>
-      <ul>
-      <li>Developing strong skills in algorithms, data structures, software engineering, and web development. Participating in projects, and coding competitions to enhance practical experience and problem-solving abilities.</li>
-      </ul>
-    </section>
-
-  </div>
-</body>
+  </body>
 </html>
